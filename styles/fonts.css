@@ -2,14 +2,14 @@
 @font-face {
   font-family: 'ApfelGrotezk Regular';
   src: url('/fonts/ApfelGrotezk-Regular.woff2') format('woff2'),
-    url('/fonts/ApfelGrotezk-Regular.woff') format('woff');
+    url('/fonts/ApfelGrotezk-Regular.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'ApfelGrotezk Medium';
   src: url('/fonts/ApfelGrotezk-Mittel.woff2') format('woff2'),
-    url('/fonts/ApfelGrotezk-Mittel.woff') format('woff');
+    url('/fonts/ApfelGrotezk-Mittel.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'ApfelGrotezk Bold';
   src: url('/fonts/ApfelGrotezk-Fett.woff2') format('woff2'),
-    url('/fonts/ApfelGrotezk-Fett.woff') format('woff');
+    url('/fonts/ApfelGrotezk-Fett.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
