@@ -96,6 +96,9 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Kuba Jawor, a design and sustainability oriented web developer."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kubajawor.dev" />
+        <meta property="og:image" content="" />
       </Head>
       <Component {...pageProps} />
     </>
