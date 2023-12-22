@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Emoji';
+  src: url('/fonts/NotoEmoji-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'ApfelGrotezk Regular';

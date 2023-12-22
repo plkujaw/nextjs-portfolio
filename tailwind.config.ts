@@ -27,6 +27,7 @@ const config: Config = {
         regular: ['ApfelGrotezk Regular'],
         medium: ['ApfelGrotezk Medium'],
         bold: ['ApfelGrotezk Bold'],
+        emoji: ['Emoji'],
       },
     },
     plugins: [],

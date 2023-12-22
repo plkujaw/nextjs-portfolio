@@ -17,7 +17,8 @@ export default function Intro({}: Props) {
             transition={{ delay: 0.5, duration: 1 }}
             className="mb-[1em]"
           >
-            Hi 👋🏻, I&apos;m Kuba Jawor, a{' '}
+            Hi <span className="font-emoji">👋</span>, I&apos;m Kuba
+            Jawor, a{' '}
             <span className="text-outline">
               design and sustainability-oriented
             </span>{' '}
