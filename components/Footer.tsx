@@ -18,7 +18,7 @@ export default function Footer({}: Props) {
               >
                 Apfel Grotezk
               </a>{' '}
-              font. Inspired by{' '}
+              font. Design inspired by{' '}
               <a
                 href="https://capelo.me/"
                 className="relative link-underline inline-block"
