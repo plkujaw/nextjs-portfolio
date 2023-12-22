@@ -17,8 +17,13 @@ export default function Intro({}: Props) {
             transition={{ delay: 0.5, duration: 1 }}
             className="mb-[1em]"
           >
-            Hi <span className="font-emoji text-gray-light">👋</span>,
-            I&apos;m Kuba Jawor, a{' '}
+            Hi{' '}
+            <img
+              src="/images/wave.svg"
+              alt="Waving Hand Emoji"
+              className="inline-block w-[1em] align-text-top"
+            />
+            , I&apos;m Kuba Jawor, a{' '}
             <span className="text-outline">
               design and sustainability-oriented
             </span>{' '}
