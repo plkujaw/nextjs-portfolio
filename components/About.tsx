@@ -57,7 +57,7 @@ export default function About({}: Props) {
             <p>
               Experienced in using{' '}
               <span className="text-gray-medium">
-                WordPress, PHP, JavaScript
+                WordPress, PHP, JavaScript,
               </span>{' '}
               who constantly embraces opportunities to expand the
               current skill set.

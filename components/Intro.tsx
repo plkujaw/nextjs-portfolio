@@ -37,9 +37,9 @@ export default function Intro({}: Props) {
           >
             I work mostly with{' '}
             <span className="text-outline">
-              WordPress and front-end stack
+              WordPress and front-end stack, {''}
             </span>
-            , creating custom solutions and platforms.
+            creating custom solutions and platforms.
           </motion.h1>
         </div>
       </div>
