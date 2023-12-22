@@ -19,12 +19,14 @@ export default function Projects({}: Props) {
       },
       {
         name: 'Pollitt & Partners',
-        description: 'Independent brand, design and creative agency',
+        description:
+          'Brand, design and creative agency, delivering inspiring work which drives progress: for business, people, culture and society',
         link: 'https://pollittandpartners.com',
       },
       {
         name: 'Duke & Duck',
-        description: 'Emmy award-winning content studio',
+        description:
+          'Emmy award-winning content studio focused on brand, editorial, and documentary animation and motion graphics',
         link: 'https://dukeduck.com',
       },
       {
