@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
@@ -82,6 +83,16 @@ export default function App({ Component, pageProps }: AppProps) {
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥷🏼</text></svg>"
         />
         <title>Home | kubajawor.dev</title>
+        <meta
+          name="description"
+          content="Kuba Jawor - Web Developer"
+          key="desc"
+        />
+        <meta property="og:title" content="kubajawor.dev" />
+        <meta
+          property="og:description"
+          content="Kuba Jawor - Web Developer"
+        />
       </Head>
       <Component {...pageProps} />
     </>
