@@ -36,10 +36,10 @@ export default function Intro({}: Props) {
             className="mb-[1em]"
           >
             I work mostly with{' '}
-            <span className="text-outline">WordPress</span> and
-            front-end stack, creating{' '}
-            <span className="text-outline">custom</span> solutions and
-            platforms.
+            <span className="text-outline">
+              WordPress and front-end stack
+            </span>
+            , creating custom solutions and platforms.
           </motion.h1>
         </div>
       </div>
