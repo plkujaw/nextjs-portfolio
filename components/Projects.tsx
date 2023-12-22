@@ -121,7 +121,7 @@ export default function Projects({}: Props) {
                   className={`project absolute top-0 left-0 duration-200 ease-in-out ${
                     activeProject?.name === project.name
                       ? 'opacity-1'
-                      : 'opacity-0 pointer-events-none'
+                      : 'opacity-0 pointer-events-none invisible'
                   }`}
                 >
                   <p className="!mb-1"> {project.description}</p>

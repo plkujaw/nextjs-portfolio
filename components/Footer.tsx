@@ -14,10 +14,18 @@ export default function Footer({}: Props) {
               <a
                 href="https://www.collletttivo.it/typefaces/apfel-grotezk"
                 className="relative link-underline inline-block"
+                target="_blank"
               >
                 Apfel Grotezk
               </a>{' '}
-              font
+              font. Inspired by{' '}
+              <a
+                href="https://capelo.me/"
+                className="relative link-underline inline-block"
+                target="_blank"
+              >
+                António Capelo.
+              </a>
             </span>
           </p>
         </div>
