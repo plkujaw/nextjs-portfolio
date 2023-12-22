@@ -26,7 +26,15 @@ const config: Config = {
       fontFamily: {
         regular: ['ApfelGrotezk Regular'],
         medium: ['ApfelGrotezk Medium'],
-        emoji: ['Emoji'],
+        emoji: [
+          'Emoji',
+          'sans-serif',
+          'system-ui',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Twemoji Mozilla',
+          'Segoe UI Symbol',
+        ],
       },
     },
     plugins: [],
