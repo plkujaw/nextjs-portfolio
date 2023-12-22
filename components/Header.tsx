@@ -38,9 +38,13 @@ export default function Header({}: Props) {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.25, duration: 0.75 }}
-              className="  leading-none"
+              className="leading-none"
             >
-              <a className="tracking-wider" data-scroll-to="about">
+              <a
+                className="tracking-wider"
+                data-scroll-to="about"
+                rel="noindex"
+              >
                 About
               </a>
             </motion.li>
@@ -48,9 +52,13 @@ export default function Header({}: Props) {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.75 }}
-              className="  leading-none"
+              className="leading-none"
             >
-              <a className="tracking-wider" data-scroll-to="projects">
+              <a
+                className="tracking-wider"
+                data-scroll-to="projects"
+                rel="noindex"
+              >
                 Projects
               </a>
             </motion.li>
@@ -58,9 +66,13 @@ export default function Header({}: Props) {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.55, duration: 0.75 }}
-              className="  leading-none"
+              className="leading-none"
             >
-              <a className="tracking-wider" data-scroll-to="contact">
+              <a
+                className="tracking-wider"
+                data-scroll-to="contact"
+                rel="noindex"
+              >
                 Contact
               </a>
             </motion.li>
