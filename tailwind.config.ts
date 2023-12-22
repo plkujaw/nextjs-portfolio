@@ -26,7 +26,6 @@ const config: Config = {
       fontFamily: {
         regular: ['ApfelGrotezk Regular'],
         medium: ['ApfelGrotezk Medium'],
-        bold: ['ApfelGrotezk Bold'],
         emoji: ['Emoji'],
       },
     },
