@@ -60,6 +60,7 @@ export default function About({}: Props) {
               importance of digital responsibility by{' '}
               <a
                 href="https://www.lattimoreandfriends.com/blog/building-wordpress-websites-in-a-sustainable-way"
+                target="_blank"
                 className="relative text-gray-medium inactive link-underline inline-block"
               >
                 actively promoting
