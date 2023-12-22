@@ -11,7 +11,6 @@
 
   body {
     font-family: 'ApfelGrotezk Medium', sans-serif;
-    /* font-family: 'Messapia', sans-serif; */
     @apply text-gray-light;
     @apply bg-gray-dark;
     @apply leading-tight;
