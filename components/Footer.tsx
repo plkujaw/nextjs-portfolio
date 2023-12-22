@@ -1,5 +1,4 @@
 type Props = {};
-
 export default function Footer({}: Props) {
   const currentYear = new Date().getFullYear();
 
@@ -28,6 +27,12 @@ export default function Footer({}: Props) {
               </a>
             </span>
           </p>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>`,
+            }}
+          />
         </div>
       </div>
     </footer>
