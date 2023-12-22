@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React, { useEffect, useRef } from 'react';
 
 type Props = {};
@@ -23,7 +24,13 @@ export default function About({}: Props) {
   }, []);
 
   return (
-    <section id="about" className="bg-gray-light text-gray-dark">
+    <motion.section
+      initial={{ top: '6rem' }}
+      animate={{ top: 0 }}
+      transition={{ delay: 1.9, duration: 0.75 }}
+      id="about"
+      className="bg-gray-light text-gray-dark relative"
+    >
       <div className="container">
         <div className="inner md:flex md:gap-5 md:items-center overflow-hidden relative">
           <div className="hidden md:block absolute h-screen top-0 left-0 md:w-1/2">
@@ -71,6 +78,6 @@ export default function About({}: Props) {
           </article>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
