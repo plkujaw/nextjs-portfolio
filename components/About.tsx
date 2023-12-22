@@ -38,22 +38,34 @@ export default function About({}: Props) {
           </div>
           <article className="md:w-1/2 ml-auto md:pl-8">
             <p>
-              Sunt sit odit consequuntur enim tenetur, obcaecati dolor
-              nulla, ut ea. Minima, ipsam debitis. Sunt sit odit
-              consequuntur enim tenetur, obcaecati dolor nulla, ut ea.
-              Minima, ipsam debitis.
+              Positively driven web developer with a good eye for
+              detail and{' '}
+              <span className="text-gray-medium">
+                design and layout aesthetics,
+              </span>{' '}
+              committed to building solid, beautiful and
+              <span className="text-gray-medium"> user-focused </span>
+              digital products.
             </p>{' '}
             <p>
-              Sunt sit odit consequuntur enim tenetur, obcaecati dolor
-              nulla, ut ea. Minima, ipsam debitis. Sunt sit odit
-              consequuntur enim tenetur, obcaecati dolor nulla, ut ea.
-              Minima, ipsam debitis.
-            </p>{' '}
+              Experienced in using{' '}
+              <span className="text-gray-medium">
+                WordPress, PHP, JavaScript
+              </span>{' '}
+              who constantly embraces opportunities to expand the
+              current skill set.
+            </p>
             <p>
-              Sunt sit odit consequuntur enim tenetur, obcaecati dolor
-              nulla, ut ea. Minima, ipsam debitis. Sunt sit odit
-              consequuntur enim tenetur, obcaecati dolor nulla, ut ea.
-              Minima, ipsam debitis.
+              Sustainable lifestyle enthusiast advocating for the
+              importance of digital responsibility by{' '}
+              <a
+                href="https://www.lattimoreandfriends.com/blog/building-wordpress-websites-in-a-sustainable-way"
+                className="relative text-gray-medium inactive link-underline inline-block"
+              >
+                actively promoting
+              </a>{' '}
+              the concept and implementation of sustainable web
+              development.
             </p>
           </article>
         </div>

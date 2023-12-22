@@ -28,7 +28,7 @@ export default function Header({}: Props) {
 
   return (
     <header
-      className="sticky top-0 py-3 bg-gray-dark z-10"
+      className="sticky top-0 py-4 bg-gray-dark z-10"
       id="header"
     >
       <div className="container">
@@ -38,6 +38,7 @@ export default function Header({}: Props) {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.25, duration: 0.75 }}
+              className="  leading-none"
             >
               <a className="tracking-wider" data-scroll-to="about">
                 About
@@ -47,6 +48,7 @@ export default function Header({}: Props) {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.75 }}
+              className="  leading-none"
             >
               <a className="tracking-wider" data-scroll-to="projects">
                 Projects
@@ -56,6 +58,7 @@ export default function Header({}: Props) {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.55, duration: 0.75 }}
+              className="  leading-none"
             >
               <a className="tracking-wider" data-scroll-to="contact">
                 Contact

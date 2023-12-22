@@ -7,7 +7,7 @@ export default function Intro({}: Props) {
   return (
     <section
       className="intro flex flex-col justify-end pb-[8rem] pt-20"
-      style={{ minHeight: 'calc(100vh - 8rem);' }}
+      style={{ minHeight: 'calc(100vh - 8rem)' }}
     >
       <div className="container">
         <div className="text-fs-copy ml-auto sm:w-10/12 leading-none">
