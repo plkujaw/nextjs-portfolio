@@ -85,13 +85,13 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Home | kubajawor.dev</title>
         <meta
           name="description"
-          content="Kuba Jawor - Web Developer"
+          content="Kuba Jawor - a design and sustainability oriented web developer"
           key="desc"
         />
         <meta property="og:title" content="kubajawor.dev" />
         <meta
           property="og:description"
-          content="Kuba Jawor - Web Developer"
+          content="Kuba Jawor - a design and sustainability oriented web developer"
         />
       </Head>
       <Component {...pageProps} />
