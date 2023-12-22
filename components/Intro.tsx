@@ -21,7 +21,7 @@ export default function Intro({}: Props) {
             <img
               src="/images/wave.svg"
               alt="Waving Hand Emoji"
-              className="inline-block w-[1em] align-text-top"
+              className="inline-block w-[1em] align-text-top wave"
             />
             , I&apos;m Kuba Jawor, a{' '}
             <span className="text-outline">
