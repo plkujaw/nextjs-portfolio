@@ -10,7 +10,7 @@ export default function Intro({}: Props) {
       style={{ minHeight: 'calc(100vh - 8rem)' }}
     >
       <div className="container">
-        <div className="text-fs-copy ml-auto sm:w-10/12 leading-none">
+        <div className="text-fs-copy ml-auto sm:w-4/5 leading-none">
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
@@ -18,13 +18,16 @@ export default function Intro({}: Props) {
             className="mb-[1em]"
           >
             Hi 👋🏻, I&apos;m Kuba Jawor, a{' '}
-            <span className="text-outline">design-oriented</span> web
-            developer.
+            <span className="text-outline">
+              design and sustainability-oriented
+            </span>{' '}
+            web developer.
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.75, duration: 1 }}
+            className="mb-[1em]"
           >
             I work mostly with{' '}
             <span className="text-outline">WordPress</span> and
