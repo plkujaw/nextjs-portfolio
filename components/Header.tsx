@@ -40,11 +40,7 @@ export default function Header({}: Props) {
               transition={{ delay: 1.25, duration: 0.75 }}
               className="leading-none"
             >
-              <a
-                className="tracking-wider"
-                data-scroll-to="about"
-                rel="noindex"
-              >
+              <a className="tracking-wider" data-scroll-to="about">
                 About
               </a>
             </motion.li>
@@ -54,11 +50,7 @@ export default function Header({}: Props) {
               transition={{ delay: 1.4, duration: 0.75 }}
               className="leading-none"
             >
-              <a
-                className="tracking-wider"
-                data-scroll-to="projects"
-                rel="noindex"
-              >
+              <a className="tracking-wider" data-scroll-to="projects">
                 Projects
               </a>
             </motion.li>
@@ -68,11 +60,7 @@ export default function Header({}: Props) {
               transition={{ delay: 1.55, duration: 0.75 }}
               className="leading-none"
             >
-              <a
-                className="tracking-wider"
-                data-scroll-to="contact"
-                rel="noindex"
-              >
+              <a className="tracking-wider" data-scroll-to="contact">
                 Contact
               </a>
             </motion.li>
