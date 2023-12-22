@@ -72,7 +72,7 @@
   }
 
   section:not(.intro) {
-    @apply py-[6rem];
+    @apply py-[5rem];
     @apply scroll-my-12;
   }
 

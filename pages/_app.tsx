@@ -82,16 +82,19 @@ export default function App({ Component, pageProps }: AppProps) {
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥷🏼</text></svg>"
         />
-        <title>kubajawor.dev</title>
+        <title>Home | kubajawor.dev</title>
         <meta
           name="description"
-          content="Kuba Jawor - a design and sustainability oriented web developer"
+          content="Kuba Jawor, a design and sustainability oriented web developer."
           key="desc"
         />
-        <meta property="og:title" content="kubajawor.dev" />
+        <meta
+          property="og:title"
+          content="Kuba Jawor | kubajawor.dev"
+        />
         <meta
           property="og:description"
-          content="Kuba Jawor - a design and sustainability oriented web developer"
+          content="Kuba Jawor, a design and sustainability oriented web developer."
         />
       </Head>
       <Component {...pageProps} />
