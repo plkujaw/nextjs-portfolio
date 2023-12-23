@@ -18,9 +18,10 @@ const config: Config = {
       },
       fontSize: {
         'fs-copy': 'clamp(2rem,5vw,4rem)',
-        'fs-list': 'clamp(2.2rem,5vw,4rem)',
+        'fs-list': 'clamp(2.2rem,5vw,3.8rem)',
         'fs-title': 'clamp(3rem,8vw,6rem)',
-        'fs-body': 'clamp(1rem,3vw,1.8rem)',
+        'fs-body': 'clamp(1.4rem,3vw,2rem)',
+        'fs-medium': '1.6rem',
         'fs-normal': '1.2rem',
       },
       fontFamily: {

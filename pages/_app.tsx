@@ -2,18 +2,21 @@ import '@/styles/globals.css';
 
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const detectMobile = () => {
       const userAgent = window.navigator.userAgent;
       const isMobileDevice =
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        /(Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Mobile|Kindle|Silk|PlayBook|Xoom|Palm|Symbian|Nokia|LG|Samsung|SonyEricsson|Nexus|HTC|Motorola|Dell|Asus|Fujitsu|HP|ZTE|Mobi|Tablet|Mobile|mini|Sony|CriOS|Chrome|FxiOS|Firefox|Opera Mini|OPiOS|Edg|EdgA|UCBrowser).*AppleWebKit.*|(BlackBerry|Baiduspider|Googlebot|Yahoo! Slurp|Bingbot|Facebook|Twitter|LinkedIn|Pinterest|WhatsApp).*Mobile.*/.test(
           userAgent
         );
+
       setIsMobile(isMobileDevice);
       document.body.classList.toggle('mobile', isMobileDevice);
     };
@@ -66,14 +69,26 @@ export default function App({ Component, pageProps }: AppProps) {
       link.addEventListener('mouseleave', handleLinkLeave);
     });
 
+    // Scroll to the top on route change
+    const handleRouteChange = () => {
+      window.scrollTo(0, 0);
+    };
+
+    // Listen for route changes
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    // Remove the event listener when the component is unmounted
+
     return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+
       window.removeEventListener('resize', handleResize);
       links.forEach((link) => {
         link.removeEventListener('mouseenter', handleLinkHover);
         link.removeEventListener('mouseleave', handleLinkLeave);
       });
     };
-  }, []);
+  }, [router.events]);
 
   return (
     <>

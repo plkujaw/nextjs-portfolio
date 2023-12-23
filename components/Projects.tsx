@@ -79,7 +79,7 @@ export default function Projects({}: Props) {
     <section className="projects" id="projects">
       <div className="container">
         <h2 className="text-fs-title">Recent Projects</h2>
-        <p className="font-regular md:w-1/2">
+        <p className="font-regular text-fs-medium md:w-1/2">
           custom wordpress websites / php / front-end libraries / 3rd
           party integrations
         </p>
@@ -126,7 +126,10 @@ export default function Projects({}: Props) {
                       : 'opacity-0 pointer-events-none invisible'
                   }`}
                 >
-                  <p className="!mb-1"> {project.description}</p>
+                  <p className="!mb-1 text-fs-medium">
+                    {' '}
+                    {project.description}
+                  </p>
                   <a
                     href={project.link}
                     className="relative link-underline text-fs-normal"
