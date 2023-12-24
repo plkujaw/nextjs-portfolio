@@ -7,9 +7,10 @@ import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isMobile, setIsMobile] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
+    window.history.scrollRestoration = 'manual';
     const detectMobile = () => {
       const userAgent = window.navigator.userAgent;
       const isMobileDevice =
@@ -69,18 +70,18 @@ export default function App({ Component, pageProps }: AppProps) {
       link.addEventListener('mouseleave', handleLinkLeave);
     });
 
-    // Scroll to the top on route change
-    const handleRouteChange = () => {
-      window.scrollTo(0, 0);
-    };
+    // // Scroll to the top on route change
+    // const handleRouteChange = () => {
+    //   window.scrollTo(0, 0);
+    // };
 
-    // Listen for route changes
-    router.events.on('routeChangeComplete', handleRouteChange);
+    // // Listen for route changes
+    // router.events.on('routeChangeComplete', handleRouteChange);
 
-    // Remove the event listener when the component is unmounted
+    // // Remove the event listener when the component is unmounted
 
     return () => {
-      router.events.off('routeChangeComplete', handleRouteChange);
+      // router.events.off('routeChangeComplete', handleRouteChange);
 
       window.removeEventListener('resize', handleResize);
       links.forEach((link) => {
@@ -88,7 +89,7 @@ export default function App({ Component, pageProps }: AppProps) {
         link.removeEventListener('mouseleave', handleLinkLeave);
       });
     };
-  }, [router.events]);
+  }, []);
 
   return (
     <>

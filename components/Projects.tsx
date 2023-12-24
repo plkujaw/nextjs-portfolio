@@ -78,12 +78,14 @@ export default function Projects({}: Props) {
   return (
     <section className="projects" id="projects">
       <div className="container">
-        <h2 className="text-fs-title">Recent Projects</h2>
+        <h2 className="text-fs-title leading-none ">
+          Recent Projects
+        </h2>
         <p className="font-regular text-fs-medium md:w-1/2">
           custom wordpress websites / php / front-end libraries / 3rd
           party integrations
         </p>
-        <div className="flex font-fs-list gap-10">
+        <div className="flex gap-10">
           <div className="projects__list md:w-3/5">
             <ul className="text-fs-list">
               {projects.map((project) => (

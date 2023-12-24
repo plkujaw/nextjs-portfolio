@@ -41,7 +41,7 @@ export default function Intro({}: Props) {
             <span className="text-outline">
               WordPress and front-end stack, {''}
             </span>
-            creating custom solutions and platforms.
+            creating custom solutions and products.
           </motion.h1>
         </div>
       </div>
