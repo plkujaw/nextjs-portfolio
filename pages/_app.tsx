@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isMobile, setIsMobile] = useState(false);
-  // const router = useRouter();
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
@@ -70,19 +69,7 @@ export default function App({ Component, pageProps }: AppProps) {
       link.addEventListener('mouseleave', handleLinkLeave);
     });
 
-    // // Scroll to the top on route change
-    // const handleRouteChange = () => {
-    //   window.scrollTo(0, 0);
-    // };
-
-    // // Listen for route changes
-    // router.events.on('routeChangeComplete', handleRouteChange);
-
-    // // Remove the event listener when the component is unmounted
-
     return () => {
-      // router.events.off('routeChangeComplete', handleRouteChange);
-
       window.removeEventListener('resize', handleResize);
       links.forEach((link) => {
         link.removeEventListener('mouseenter', handleLinkHover);
