@@ -6,7 +6,7 @@ type Props = {};
 export default function Intro({}: Props) {
   return (
     <section
-      className="intro flex flex-col justify-center pb-[2rem] pt-10 md:pt-20"
+      className="intro flex flex-col justify-end pb-[2rem] pt-10 md:pt-20"
       style={{ minHeight: 'calc(100vh - 8rem)' }}
     >
       <div className="container">

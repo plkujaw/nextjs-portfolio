@@ -112,7 +112,7 @@
   .inactive {
     color: transparent;
     -webkit-text-stroke-color: hsl(0, 0%, 98%);
-    -webkit-text-stroke-width: 0.01em;
+    -webkit-text-stroke-width: 0.02em;
     transition: color 0.2s;
   }
 
