@@ -32,7 +32,7 @@ export default function About({}: Props) {
       className="bg-gray-light text-gray-dark relative"
     >
       <div className="container">
-        <div className="inner md:flex md:gap-5 md:items-center overflow-hidden relative">
+        <div className="inner overflow-hidden relative">
           <div className="hidden md:block absolute h-screen top-0 left-0 md:w-1/2">
             <img
               ref={imageRef}
@@ -45,32 +45,42 @@ export default function About({}: Props) {
           </div>
           <article className="md:w-1/2 ml-auto md:pl-8">
             <p>
-              Positively driven web developer with a good eye for
-              detail and{' '}
+              Positively driven and proactive developer with a good
+              eye for detail and{' '}
               <span className="text-gray-medium">
-                design and layout aesthetics,
-              </span>{' '}
+                design and layout aesthetics.
+              </span>
+              {/* {' '}
               committed to building solid, beautiful and
               <span className="text-gray-medium"> user-focused </span>
-              digital products.
-            </p>{' '}
+              digital products. */}
+            </p>
             <p>
-              Experienced in using{' '}
+              {/* Experienced in using{' '}
               <span className="text-gray-medium">
                 WordPress, PHP, JavaScript,
               </span>{' '}
               who constantly embraces opportunities to expand the
-              current skill set.
+              current skill set. */}
+              With over 3 years of commercial experience using{' '}
+              <span className="text-gray-medium">
+                WordPress, PHP, JavaScript, HTML5 and CSS3/SASS,
+              </span>{' '}
+              and hands-on experience with modern front-end libraries
+              and frameworks like{' '}
+              <span className="text-gray-medium">
+                Vue.js, Next.js, TailwindCSS.
+              </span>
             </p>
             <p>
-              Sustainable lifestyle enthusiast advocating for the
-              importance of digital responsibility by{' '}
+              {/* Sustainable lifestyle enthusiast advocating for the
+              importance of digital responsibility by{' '} */}
               <a
                 href="https://www.lattimoreandfriends.com/blog/building-wordpress-websites-in-a-sustainable-way"
                 target="_blank"
-                className="relative text-gray-medium inactive link-underline inline-block"
+                className="relative text-gray-medium link-underline inline-block"
               >
-                actively promoting
+                Actively promoting
               </a>{' '}
               the concept and implementation of sustainable web
               development.

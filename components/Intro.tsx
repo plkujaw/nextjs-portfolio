@@ -29,7 +29,7 @@ export default function Intro({}: Props) {
             <span className="text-outline">
               design and sustainability-oriented
             </span>{' '}
-            web developer.
+            developer.
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 25 }}

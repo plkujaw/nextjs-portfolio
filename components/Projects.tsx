@@ -105,7 +105,7 @@ export default function Projects({}: Props) {
                     </span>
                   </button>
                   <a
-                    className={'text-outline md:hidden'}
+                    className={'inactive md:hidden'}
                     href={project.link}
                     target="_blank"
                   >
