@@ -62,11 +62,15 @@
     width: 100%;
   }
 
-  .link-underline:hover::after {
+  .link-underline:hover::after,
+  .link-underline:focus::after,
+  .link-underline:focus-visible::after {
     transform: scaleX(0.85);
   }
 
-  nav a:hover::after {
+  nav a:hover::after,
+  nav a:focus::after,
+  nav a:focus-visible::after {
     width: 1em;
   }
 
@@ -116,7 +120,9 @@
     transition: color 0.2s;
   }
 
-  .inactive:hover {
+  .inactive:hover,
+  .inactive:focus,
+  .inactive:focus-visible {
     color: currentColor;
   }
 
@@ -142,6 +148,12 @@
     animation-iteration-count: 1;
     animation-name: wave-animation;
     transform-origin: 70% 70%;
+  }
+
+  a:focus,
+  button:focus {
+    box-shadow: none;
+    outline-color: invert(currentColor);
   }
 
   @keyframes wave-animation {

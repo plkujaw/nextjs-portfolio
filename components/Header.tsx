@@ -39,6 +39,7 @@ export default function Header({}: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.25, duration: 0.75 }}
               className="leading-none"
+              tabIndex={0}
             >
               <a className="tracking-wider" data-scroll-to="about">
                 About
@@ -49,6 +50,7 @@ export default function Header({}: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.75 }}
               className="leading-none"
+              tabIndex={0}
             >
               <a className="tracking-wider" data-scroll-to="projects">
                 Projects
@@ -59,6 +61,7 @@ export default function Header({}: Props) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.55, duration: 0.75 }}
               className="leading-none"
+              tabIndex={0}
             >
               <a className="tracking-wider" data-scroll-to="contact">
                 Contact
