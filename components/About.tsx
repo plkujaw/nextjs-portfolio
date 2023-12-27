@@ -36,8 +36,8 @@ export default function About({}: Props) {
           <div className="hidden md:block absolute h-screen top-0 left-0 md:w-1/2">
             <img
               ref={imageRef}
-              src="/images/me11.jpeg"
-              alt="me"
+              src="/images/me1.jpeg"
+              alt="A man with long hair wearing a baseball cap, exuding a casual yet stylish vibe."
               loading="lazy"
               className="object-cover w-full h-full absolute top-0 left-0 object-center"
               style={{ top: '-15%' }}
