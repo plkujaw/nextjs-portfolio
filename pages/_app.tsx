@@ -88,7 +88,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Home | kubajawor.dev</title>
         <meta
           name="description"
-          content="Kuba Jawor, a design and sustainability oriented web developer."
+          content="Kuba Jawor, a design and sustainability oriented developer."
           key="desc"
         />
         <meta
@@ -97,7 +97,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:description"
-          content="Kuba Jawor, a design and sustainability oriented web developer."
+          content="Kuba Jawor, a design and sustainability oriented developer."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kubajawor.dev" />
