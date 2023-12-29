@@ -69,7 +69,7 @@ export default function About({}: Props) {
               and hands-on experience with modern front-end libraries
               and frameworks like{' '}
               <span className="text-gray-medium">
-                Vue.js, Next.js, TailwindCSS.
+                Vue.js, Next.js, TailwindCSS, Framer Motion.
               </span>
             </p>
             <p>
