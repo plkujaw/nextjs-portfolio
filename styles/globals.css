@@ -126,6 +126,10 @@
     color: currentColor;
   }
 
+  .project-title span.active {
+    -webkit-text-stroke-width: 0.02em;
+  }
+
   .project-title span::after {
     content: '';
     display: inline-block;
