@@ -50,18 +50,8 @@ export default function About({}: Props) {
               <span className="text-gray-medium">
                 design and layout aesthetics.
               </span>
-              {/* {' '}
-              committed to building solid, beautiful and
-              <span className="text-gray-medium"> user-focused </span>
-              digital products. */}
             </p>
             <p>
-              {/* Experienced in using{' '}
-              <span className="text-gray-medium">
-                WordPress, PHP, JavaScript,
-              </span>{' '}
-              who constantly embraces opportunities to expand the
-              current skill set. */}
               With over 3 years of commercial experience using{' '}
               <span className="text-gray-medium">
                 WordPress, PHP, JavaScript, HTML5 and CSS3/SASS,
@@ -73,8 +63,6 @@ export default function About({}: Props) {
               </span>
             </p>
             <p>
-              {/* Sustainable lifestyle enthusiast advocating for the
-              importance of digital responsibility by{' '} */}
               <a
                 href="https://www.lattimoreandfriends.com/blog/building-wordpress-websites-in-a-sustainable-way"
                 target="_blank"
