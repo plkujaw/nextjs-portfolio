@@ -99,7 +99,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:url" content="https://kubajawor.dev" />
         <meta
           property="og:image"
-          content="https://kubajawor.dev/images/og.png"
+          content="https://kubajawor.dev/images/og-kj.png"
         />
       </Head>
       <Component {...pageProps} />
