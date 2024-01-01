@@ -3,7 +3,7 @@ export default function Footer({}: Props) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer bg-gray-light text-gray-dark">
+    <footer className="footer">
       <div className="container">
         <div className="text-sm py-5 text-center md:text-left">
           <p className="">

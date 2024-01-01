@@ -5,6 +5,8 @@ import Intro from '@/components/Intro';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
+import projects from '@/data/projects';
+import otherWorks from '@/data/otherWorks';
 export const metadata: Metadata = {
   title: '...',
   description: '...',
@@ -17,7 +19,8 @@ export default function Home() {
       <main>
         <Intro />
         <About />
-        <Projects />
+        <Projects data={projects} />
+        {/* <Projects works={{ other: true }} data={otherWorks} /> */}
         <Contact />
       </main>
       <Footer />

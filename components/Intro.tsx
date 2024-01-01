@@ -24,6 +24,7 @@ export default function Intro({}: Props) {
               className="inline-block w-[1em] align-text-top wave"
               width={32}
               height={32}
+              loading="lazy"
             />
             , I&apos;m Kuba Jawor, a{' '}
             <span className="text-outline">

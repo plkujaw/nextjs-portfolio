@@ -1,6 +1,17 @@
+import { motion } from 'framer-motion';
 import React, { useEffect, useMemo, useState } from 'react';
 
-type Props = {};
+type Props = {
+  data?: {
+    name: string;
+    description: string;
+    link: string;
+  }[];
+
+  works?: {
+    other?: boolean;
+  };
+};
 
 type Project = {
   name: string;
@@ -8,55 +19,7 @@ type Project = {
   link: string;
 };
 
-export default function Projects({}: Props) {
-  const projects: Project[] = useMemo(
-    () => [
-      {
-        name: 'AMYP',
-        description:
-          'Venture capital fund focused on the mobility, space, blockchain, and artificial intelligence sectors',
-        link: 'https://amyp-ventures.com',
-      },
-      {
-        name: 'Pollitt & Partners',
-        description:
-          'Brand, design and creative agency, delivering inspiring work which drives progress: for business, people, culture and society',
-        link: 'https://pollittandpartners.com',
-      },
-      {
-        name: 'Duke & Duck',
-        description:
-          'Emmy award-winning content studio focused on brand, editorial, and documentary animation and motion graphics',
-        link: 'https://dukeduck.com',
-      },
-      {
-        name: 'Adero Partners',
-        description:
-          'Wealth management services provider to high-net-worth individuals and families',
-        link: 'https://aderopartners.com',
-      },
-      {
-        name: 'Stonewall Housing',
-        description:
-          'Specialist LGBTQ+ housing advice and support provider',
-        link: 'https://stonewallhousing.org',
-      },
-      {
-        name: 'Earlsgate',
-        description:
-          'Developer specialising in country houses and estates',
-        link: 'https://earlsgate.com',
-      },
-      {
-        name: 'Intersoft',
-        description:
-          'Custom tool for carrier management for eCommerce',
-        link: 'https://intersoft.co.uk/partner-matching-tool/',
-      },
-    ],
-    []
-  );
-
+export default function Projects({ data, works }: Props) {
   const [activeProject, setActiveProject] = useState<Project | null>(
     null
   );
@@ -65,34 +28,56 @@ export default function Projects({}: Props) {
 
   useEffect(() => {
     // Set the first project as active on component mount
-    setActiveProject(projects[0]);
+    setActiveProject(data ? data[0] : null);
     setDescriptionVisible(true); // Show description on mount
-  }, [projects]); // Empty dependency array ensures this effect runs only once on mount
+  }, [data]); // Update dependency array to 'data'
 
   const handleProjectClick = (project: Project) => {
     setDescriptionVisible(false); // Hide description before changing project
-    setActiveProject(project);
-    setDescriptionVisible(true); // Show description after changing project
+    setTimeout(() => {
+      setActiveProject(project);
+      setDescriptionVisible(true); // Show description after changing project
+    }, 200); // Use a delay to avoid flickering during the transition
   };
 
   return (
-    <section className="projects" id="projects">
+    <section
+      className={`projects `}
+      id={`${works?.other ? 'other-works' : 'projects'}`}
+    >
       <div className="container">
-        <h2 className="text-fs-title leading-none ">
-          Recent Projects
+        <h2
+          className={`text-fs-title leading-none ${
+            works?.other ? 'text-right' : ''
+          }`}
+        >
+          {works?.other ? 'Other Works' : 'Projects'}
         </h2>
-        <p className="font-regular text-fs-medium md:w-1/2">
-          custom wordpress websites / php / front-end libraries / 3rd
-          party integrations
+        <p
+          className={`font-regular text-fs-medium md:w-1/2 ${
+            works?.other ? 'text-right ml-auto' : ''
+          }`}
+        >
+          {works?.other
+            ? 'front-end libraries / 3rd party integrations'
+            : 'custom WordPress websites / PHP / front-end libraries / 3rd party integrations'}
         </p>
-        <div className="flex gap-10">
-          <div className="projects__list md:w-3/5">
+        <div
+          className={`flex gap-10 ${
+            works?.other ? 'flex-row-reverse' : ''
+          }`}
+        >
+          <div className={`projects__list md:w-3/5`}>
             <ul className="text-fs-list">
-              {projects.map((project) => (
+              {data?.map((project) => (
                 <li key={project.name}>
                   <button
-                    className="hidden md:block text-left project-title"
-                    onClick={() => handleProjectClick(project)}
+                    className={`hidden md:block text-left project-title`}
+                    onClick={() =>
+                      activeProject?.name !== project.name
+                        ? handleProjectClick(project)
+                        : null
+                    }
                   >
                     <span
                       className={
@@ -105,7 +90,7 @@ export default function Projects({}: Props) {
                     </span>
                   </button>
                   <a
-                    className={'inactive md:hidden'}
+                    className={`{inactive md:hidden`}
                     href={project.link}
                     target="_blank"
                   >
@@ -115,25 +100,21 @@ export default function Projects({}: Props) {
               ))}
             </ul>
           </div>
-          <div className="projects__description hidden md:block text-grey-light md:w-2/5 font-regular relative">
-            {projects.map((project) => (
-              <div
-                key={project.name}
-                className={`project-wrapper sticky top-[63px]`}
-              >
-                <div
-                  className={`project absolute top-0 left-0 duration-200 ease-in-out ${
-                    activeProject?.name === project.name
-                      ? 'opacity-1'
-                      : 'opacity-0 pointer-events-none invisible'
-                  }`}
-                >
+          <motion.div
+            className={`projects__description hidden md:block text-grey-light font-regular relative md:w-2/5`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isDescriptionVisible ? 1 : 0 }}
+            transition={{ duration: 0.2, ease: 'circOut' }}
+          >
+            {activeProject && (
+              <div className={`project-wrapper sticky top-[63px]`}>
+                <div className={`project`}>
                   <p className="!mb-1 text-fs-medium">
                     {' '}
-                    {project.description}
+                    {activeProject.description}
                   </p>
                   <a
-                    href={project.link}
+                    href={activeProject.link}
                     className="relative link-underline text-fs-normal"
                     target="_blank"
                   >
@@ -141,8 +122,8 @@ export default function Projects({}: Props) {
                   </a>
                 </div>
               </div>
-            ))}
-          </div>
+            )}
+          </motion.div>
         </div>
       </div>
     </section>

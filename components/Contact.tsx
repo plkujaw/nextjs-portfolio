@@ -4,13 +4,16 @@ type Props = {};
 
 export default function Contact({}: Props) {
   return (
-    <section className="contact" id="contact">
+    <section
+      className="contact bg-gray-light text-gray-dark"
+      id="contact"
+    >
       <div className="container">
         <h2 className="text-fs-title">Get in touch</h2>
-        <ul className="text-fs-list text-gray-light">
+        <ul className="text-fs-list">
           <li>
             <a
-              className="inactive"
+              className="inactive-dark"
               href="mailto:hello@kubajawor.dev"
               target="_blank"
             >
@@ -19,7 +22,7 @@ export default function Contact({}: Props) {
           </li>
           <li>
             <a
-              className="inactive"
+              className="inactive-dark"
               href="https://instagram.com/plkujaw"
               target="_blank"
             >
@@ -28,7 +31,7 @@ export default function Contact({}: Props) {
           </li>
           <li>
             <a
-              className="inactive"
+              className="inactive-dark"
               href="https://linkedin.com/in/kubajawor"
               target="_blank"
             >
