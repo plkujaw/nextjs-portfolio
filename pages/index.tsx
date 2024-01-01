@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import { Metadata } from 'next';
 import projects from '@/data/projects';
 import otherWorks from '@/data/otherWorks';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 export const metadata: Metadata = {
   title: '...',
   description: '...',
@@ -24,6 +25,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <SpeedInsights />
     </>
   );
 }
