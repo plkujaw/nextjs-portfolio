@@ -90,7 +90,7 @@ export default function Projects({ data, works }: Props) {
                     </span>
                   </button>
                   <a
-                    className={`{inactive md:hidden`}
+                    className={`inactive md:hidden`}
                     href={project.link}
                     target="_blank"
                   >
