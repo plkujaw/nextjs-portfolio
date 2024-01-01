@@ -6,15 +6,17 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    @apply bg-gray-light;
+    @apply bg-gray-dark;
+
   }
 
   body {
     font-family: 'ApfelGrotezk Medium', sans-serif;
     @apply text-gray-light;
-    @apply bg-gray-dark;
     @apply leading-tight;
     @apply text-fs-body;
+
+
   }
 
   *::selection {
