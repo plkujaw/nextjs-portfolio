@@ -5,8 +5,8 @@ import Intro from '@/components/Intro';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
-import projects from '@/data/projects';
-import otherWorks from '@/data/otherWorks';
+import projects from '@/data/projects.js';
+import otherWorks from '@/data/otherWorks.js';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 export const metadata: Metadata = {
   title: '...',

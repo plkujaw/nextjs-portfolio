@@ -9,7 +9,7 @@ export default function Contact({}: Props) {
       id="contact"
     >
       <div className="container">
-        <h2 className="text-fs-title">Get in touch</h2>
+        <h2 className="text-fs-title leading-none">Get in touch</h2>
         <ul className="text-fs-list">
           <li>
             <a
