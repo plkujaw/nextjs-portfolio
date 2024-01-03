@@ -8,6 +8,7 @@ import { Metadata } from 'next';
 import projects from '@/data/projects.js';
 import otherWorks from '@/data/otherWorks.js';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 export const metadata: Metadata = {
   title: '...',
   description: '...',
@@ -26,6 +27,7 @@ export default function Home() {
       </main>
       <Footer />
       <SpeedInsights />
+      <Analytics />
     </>
   );
 }
