@@ -22,7 +22,7 @@ export default function Home() {
         <Intro />
         <About />
         <Projects data={projects} />
-        {/* <Projects works={{ other: true }} data={otherWorks} /> */}
+        <Projects works={{ other: true }} data={otherWorks} />
         <Contact />
       </main>
       <Footer />
