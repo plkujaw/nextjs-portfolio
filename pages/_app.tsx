@@ -4,20 +4,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { Metadata } from 'next';
-export const metadata: Metadata = {
-  title: 'Kuba Jawor | kubajawor.dev',
-  description:
-    'Kuba Jawor, a design and sustainability oriented developer.',
-  openGraph: {
-    title: 'Kuba Jawor | kubajawor.dev',
-    description:
-      'Kuba Jawor, a design and sustainability oriented developer.',
-    url: 'https://kubajawor.dev',
-    images: ['https://kubajawor.dev/images/og-kj.png'],
-    type: 'website',
-  },
-};
+
 export default function App({ Component, pageProps }: AppProps) {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -95,7 +82,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Home | kubajawor.dev</title>
-        {/* <meta
+        <meta
           name="description"
           content="Kuba Jawor, a design and sustainability oriented developer."
           key="desc"
@@ -113,7 +100,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta
           property="og:image"
           content="https://kubajawor.dev/images/og-kj.png"
-        /> */}
+        />
       </Head>
       <Component {...pageProps} />
     </>
