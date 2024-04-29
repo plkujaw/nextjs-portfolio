@@ -25,20 +25,24 @@ const projects = [
   },
   {
     name: 'Stonewall Housing',
-    description:
-      'Specialist LGBTQ+ housing advice and support provider',
+    description: 'Specialist LGBTQ+ housing advice and support provider',
     link: 'https://stonewallhousing.org',
   },
   {
     name: 'Earlsgate',
-    description:
-      'Developer specialising in country houses and estates',
+    description: 'Developer specialising in country houses and estates',
     link: 'https://earlsgate.com',
   },
   {
     name: 'Intersoft',
     description: 'Custom tool for carrier management for eCommerce',
     link: 'https://intersoft.co.uk/partner-matching-tool/',
+  },
+  {
+    name: 'Prison Pandemic',
+    description:
+      'Digital archive of stories from people incarcerated, their family members and loved ones, and the staff who worked in these facilities during the COVID-19 pandemic',
+    link: 'https://prisonpandemic.uci.edu/',
   },
 ];
 
