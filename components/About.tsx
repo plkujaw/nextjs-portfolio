@@ -63,13 +63,7 @@ export default function About({}: Props) {
               </span>
             </p>
             <p>
-              <a
-                href="https://www.lattimoreandfriends.com/blog/building-wordpress-websites-in-a-sustainable-way"
-                target="_blank"
-                className="relative text-gray-medium link-underline inline-block"
-              >
                 Actively promoting
-              </a>{' '}
               the concept and implementation of sustainable web
               development.
             </p>
