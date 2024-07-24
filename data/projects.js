@@ -28,11 +28,11 @@ const projects = [
     description: 'Specialist LGBTQ+ housing advice and support provider',
     link: 'https://stonewallhousing.org',
   },
-  {
-    name: 'Earlsgate',
-    description: 'Developer specialising in country houses and estates',
-    link: 'https://earlsgate.com',
-  },
+  // {
+  //   name: 'Earlsgate',
+  //   description: 'Developer specialising in country houses and estates',
+  //   link: 'https://earlsgate.com',
+  // },
   {
     name: 'Intersoft',
     description: 'Custom tool for carrier management for eCommerce',
