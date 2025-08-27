@@ -81,6 +81,10 @@
     @apply scroll-my-12;
   }
 
+  section.about {
+    @apply py-0;
+  }
+
   #cursor-container {
     left: -20px;
     mix-blend-mode: difference;
