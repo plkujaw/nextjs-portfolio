@@ -29,7 +29,7 @@ export default function About({}: Props) {
       animate={{ top: 0 }}
       transition={{ delay: 1.9, duration: 0.75 }}
       id="about"
-      className="about bg-gray-light text-gray-dark relative p-0"
+      className="about bg-gray-light text-gray-dark relative py-0"
     >
       <div className="container">
         <div className="inner overflow-hidden relative">
