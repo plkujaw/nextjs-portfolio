@@ -43,7 +43,7 @@ export default function About({}: Props) {
               style={{ top: '-15%' }}
             />
           </div>
-          <article className="py-5 md:w-1/2 ml-auto md:pl-8">
+          <article className="py-[5rem] md:w-1/2 ml-auto md:pl-8">
             <p>
               Positively driven and proactive developer with a good
               eye for detail and{' '}
