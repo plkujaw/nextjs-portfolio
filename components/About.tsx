@@ -29,7 +29,7 @@ export default function About({}: Props) {
       animate={{ top: 0 }}
       transition={{ delay: 1.9, duration: 0.75 }}
       id="about"
-      className="bg-gray-light text-gray-dark relative"
+      className="about bg-gray-light text-gray-dark relative p-0"
     >
       <div className="container">
         <div className="inner overflow-hidden relative">
@@ -43,7 +43,7 @@ export default function About({}: Props) {
               style={{ top: '-15%' }}
             />
           </div>
-          <article className="md:w-1/2 ml-auto md:pl-8">
+          <article className="py-5 md:w-1/2 ml-auto md:pl-8">
             <p>
               Positively driven and proactive developer with a good
               eye for detail and{' '}
