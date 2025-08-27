@@ -81,10 +81,6 @@
     @apply scroll-my-12;
   }
 
-  section.about { 
-    @apply py-[5rem];
-  }
-
   #cursor-container {
     left: -20px;
     mix-blend-mode: difference;
