@@ -82,7 +82,7 @@
   }
 
   section.about { 
-    @apply py-0;
+    @apply py-[5rem];
   }
 
   #cursor-container {
