@@ -25,7 +25,7 @@ export default function Intro({}: Props) {
             />
             , I&apos;m Kuba Jawor, a{' '}
             <span className="text-outline">user- and product-focused</span>{' '}
-            developer.
+            front-end developer.
           </motion.h1>
           <motion.h1
             initial={{ opacity: 0, y: 25 }}
