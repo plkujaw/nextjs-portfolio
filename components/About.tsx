@@ -33,7 +33,7 @@ export default function About({}: Props) {
     >
       <div className="container">
         <div className="inner overflow-hidden relative">
-          <div className="hidden md:block absolute h-screen top-0 left-0 md:w-1/2">
+          <div className="hidden lg:block absolute h-screen top-0 left-0 lg:w-1/2">
             <img
               ref={imageRef}
               src="/images/me1.jpeg"
@@ -45,27 +45,25 @@ export default function About({}: Props) {
           </div>
           <article className="py-[5rem] md:w-1/2 ml-auto md:pl-8">
             <p>
-              Positively driven and proactive developer with a good
-              eye for detail and{' '}
-              <span className="text-gray-medium">
-                design and layout aesthetics.
-              </span>
+              With over five years of commercial experience across modern
+              front-end frameworks like
+              <span className="text-gray-medium"> React/Next.js</span> and
+              <span className="text-gray-medium"> Vue/Nuxt</span> (with{' '}
+              <span className="text-gray-medium">TypeScript</span>), alongside{' '}
+              <span className="text-gray-medium">WordPress</span> and{' '}
+              <span className="text-gray-medium">PHP</span>, I combine hands-on
+              technical skills with clear communication and a practical approach
+              to problem-solving.
             </p>
             <p>
-              With over 3 years of commercial experience using{' '}
+              Fluent in leveraging <span className="text-gray-medium">AI-assisted</span> and <span className="text-gray-medium">agentic development</span> workflows, I use emerging tools to <span className="text-gray-medium">accelerate delivery</span> and <span className="text-gray-medium">enhance creativity</span> across the product lifecycle.
+            </p>
+            <p>
+              I work closely with teams and stakeholders to{' '}
               <span className="text-gray-medium">
-                WordPress, PHP, JavaScript, HTML5 and CSS3/SASS,
+                turn ideas into useful, maintainable products that make sense
               </span>{' '}
-              and hands-on experience with modern front-end libraries
-              and frameworks like{' '}
-              <span className="text-gray-medium">
-                Vue.js, Next.js, TailwindCSS, Framer Motion.
-              </span>
-            </p>
-            <p>
-                Actively promoting
-              the concept and implementation of sustainable web
-              development.
+              for both users and the business.
             </p>
           </article>
         </div>

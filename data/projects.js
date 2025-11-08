@@ -1,5 +1,10 @@
 const projects = [
   {
+    name: 'MetaWin',
+    description: 'The World\'s Best Crypto Casino & Prize Winning Platform',
+    link: 'https://metawin.com',
+  },
+  {
     name: 'AMYP',
     description:
       'Venture capital fund focused on the mobility, space, blockchain, and artificial intelligence sectors',
@@ -18,21 +23,10 @@ const projects = [
     link: 'https://dukeduck.com',
   },
   {
-    name: 'Adero Partners',
-    description:
-      'Wealth management services provider to high-net-worth individuals and families',
-    link: 'https://aderopartners.com',
-  },
-  {
     name: 'Stonewall Housing',
     description: 'Specialist LGBTQ+ housing advice and support provider',
     link: 'https://stonewallhousing.org',
   },
-  // {
-  //   name: 'Earlsgate',
-  //   description: 'Developer specialising in country houses and estates',
-  //   link: 'https://earlsgate.com',
-  // },
   {
     name: 'Intersoft',
     description: 'Custom tool for carrier management for eCommerce',

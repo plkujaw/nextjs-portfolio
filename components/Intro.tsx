@@ -5,10 +5,7 @@ type Props = {};
 
 export default function Intro({}: Props) {
   return (
-    <section
-      className="intro flex flex-col justify-end pb-[2rem] pt-10 md:pt-20"
-      style={{ minHeight: 'calc(100svh - 8rem)' }}
-    >
+    <section className="intro flex flex-col justify-center pb-[2rem] pt-10 md:pt-20 min-h-[calc(40dvh-8rem)] lg:min-h-[calc(100dvh-8rem)]">
       <div className="container">
         <div className="text-fs-copy ml-auto sm:w-4/5 leading-none">
           <motion.h1
@@ -27,9 +24,7 @@ export default function Intro({}: Props) {
               loading="lazy"
             />
             , I&apos;m Kuba Jawor, a{' '}
-            <span className="text-outline">
-              design and sustainability-oriented
-            </span>{' '}
+            <span className="text-outline">user- and product-focused</span>{' '}
             developer.
           </motion.h1>
           <motion.h1
@@ -38,11 +33,11 @@ export default function Intro({}: Props) {
             transition={{ delay: 0.75, duration: 1 }}
             className="mb-[1em]"
           >
-            I work mostly with{' '}
-            <span className="text-outline">
-              WordPress and front-end stack, {''}
-            </span>
-            creating bespoke solutions and products.
+            I build with <span className="text-outline">React, Next.js</span>{' '}
+            and <span className="text-outline">TypeScript</span>{' '}
+            working closely with teams to bring{' '}
+            <span className="text-outline">useful, thoughtful products</span> to
+            life.
           </motion.h1>
         </div>
       </div>

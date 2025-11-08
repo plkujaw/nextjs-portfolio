@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 type Props = {
   data?: {
@@ -60,12 +60,14 @@ export default function Projects({ data, works }: Props) {
         >
           {works?.other
             ? 'front-end libraries / 3rd party integrations'
-            : 'custom WordPress websites / PHP / front-end libraries / 3rd party integrations'}
+            : <>
+              front-end libraries / 3rd party integrations
+              <br />
+              custom WordPress websites / PHP
+            </>}
         </p>
         <div
-          className={`flex gap-10 ${
-            works?.other ? 'flex-row-reverse' : ''
-          }`}
+          className={`flex gap-10 ${works?.other ? 'flex-row-reverse' : ''}`}
         >
           <div className={`projects__list md:w-3/5`}>
             <ul className="text-fs-list">
