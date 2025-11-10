@@ -45,7 +45,7 @@ export default function About({}: Props) {
           </div>
           <article className="py-[5rem] md:w-1/2 ml-auto md:pl-8">
             <p>
-              With over five years of commercial experience across modern
+              With over two years of commercial experience across modern
               front-end frameworks like
               <span className="text-gray-medium"> React/Next.js</span> and
               <span className="text-gray-medium"> Vue/Nuxt</span> (with{' '}

@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [isMobile, setIsMobile] = useState(false);
+  const [_isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     window.history.scrollRestoration = 'manual';
