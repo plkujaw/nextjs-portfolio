@@ -49,14 +49,21 @@ export default function About({}: Props) {
               front-end frameworks like
               <span className="text-gray-medium"> React/Next.js</span> and
               <span className="text-gray-medium"> Vue/Nuxt</span> (with{' '}
-              <span className="text-gray-medium">TypeScript</span>), alongside{' '}
+              <span className="text-gray-medium">TypeScript</span>), and more
+              than five years of professional experience in{' '}
               <span className="text-gray-medium">WordPress</span> and{' '}
               <span className="text-gray-medium">PHP</span>, I combine hands-on
               technical skills with clear communication and a practical approach
               to problem-solving.
             </p>
             <p>
-              Fluent in leveraging <span className="text-gray-medium">AI-assisted</span> and <span className="text-gray-medium">agentic development</span> workflows, I use emerging tools to <span className="text-gray-medium">accelerate delivery</span> and <span className="text-gray-medium">enhance creativity</span> across the product lifecycle.
+              Fluent in leveraging{' '}
+              <span className="text-gray-medium">AI-assisted</span> and{' '}
+              <span className="text-gray-medium">agentic development</span>{' '}
+              workflows, I use emerging tools to{' '}
+              <span className="text-gray-medium">accelerate delivery</span> and{' '}
+              <span className="text-gray-medium">enhance creativity</span>{' '}
+              across the product lifecycle.
             </p>
             <p>
               I work closely with teams and stakeholders to{' '}
